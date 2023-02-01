@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  main {
+    width: 30vw;
+    background-color: white;
+    header {
+      background: rgb(78, 4, 148);
+      background: linear-gradient(
+        90deg,
+        rgba(78, 4, 148, 1) 43%,
+        rgba(96, 0, 164, 1) 61%,
+        rgba(186, 71, 251, 1) 89%
+      );
+      display: flex;
+      justify-content: space-between;
+      height: 7vh;
+      .inner-header-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+      }
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 2rem;
+      
+      .inputs {
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 45%;
+          height: 2rem;
+          border-radius: 5px;
+          border: 1px solid rgb(198, 197, 197);
+        }
+      }
+      button {
+        height: 2.5rem;
+        margin-top: 1rem;
+        background: rgb(78, 4, 148);
+        background: linear-gradient(
+          90deg,
+          rgba(78, 4, 148, 1) 43%,
+          rgba(96, 0, 164, 1) 61%,
+          rgba(186, 71, 251, 1) 89%
+        );
+        color: white;
+        border: none;
+        border-radius: 5px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      .memes {
+        height: 15rem;
+        margin: 2rem 0 3rem 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .meme--text-top{
+          color: rgb(128, 33, 252);
+          position: relative;
+          font-size: 2.5rem;
+          bottom: 100%;
+          text-align: center;
+        }
+        .meme--text-bottom{
+          color: rgb(128, 33, 252);
+          position: relative;
+          font-size: 2.5rem;
+          bottom: 100%;
+          text-align: center;
+        }
+      }
+
+
+    }
+  }
+  .home-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    width: 5rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: rgb(174, 255, 0);
+    background-color: rgb(128, 33, 252);
+    border: none;
+    margin: 2rem;
+  }
+}
